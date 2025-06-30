@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Настроения</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-one">
+        <h1>Генератор Настроения</h1>
+        <p class="description" id="description">Передвиньте ползунок — и мир вокруг изменится</p>
+
+        <div class="slider-container-one">
+            <input type="range" min="0" max="100" value="50" class="slider" id="moodSlider">
+        </div>
+
+        <div class="emotion-text" id="emotionText">😊 Спокойствие</div>
+        <button class="draw-btn" id="drawBtn">Нарисовать своё настроение</button>
+    </div>
+    
+
+    <button id="audioToggle">🔊 Звук ВКЛ</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <script src="js/moodBackground.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
