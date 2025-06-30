@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+$blue_color: #4A98F7;
 
 * {
     margin: 0;
@@ -60,7 +61,7 @@ section {
 }
 
 .option:is(:hover, .active) :where(span, label) {
-    color: #4A98F7;
+    color: $blue_color;
 }
 
 .option #fill-color {
@@ -70,7 +71,7 @@ section {
 }
 
 #fill-color:checked~label {
-    color: #4A98F7;
+    color: $blue_color;
 }
 
 .option #size-slider {
@@ -110,7 +111,7 @@ section {
 }
 
 .colors .option:nth-child(5) {
-    background-color: #4A98F7;
+    background-color: $blue_color;
 }
 
 .colors .option.selected::before {
@@ -162,8 +163,8 @@ section {
 }
 
 .buttons .save-img, .btnBack:hover {
-    background: #4A98F7;
-    border: 1px solid #4A98F7;
+    background: $blue_color;
+    border: 1px solid $blue_color;
     transition: all 0.3s ease;
 }
 
